@@ -1,0 +1,48 @@
+<html> <!---Rodrigo Valero Avila--> 
+<head>
+    <head>
+        <title>Sumar</title>
+        <style>
+          body {
+            text-align:center;
+          }
+          
+          .results{
+            padding-left: 50%;
+    
+          }
+          
+        </style>
+        </head>
+      <body>
+            <div style ="background: wheat;">
+            <font color ="white" size="5px"> 
+                <h2> SUMA </h2>
+            </font>
+            </div>
+            <div style ="background: white;">
+            
+
+ <form name="calc"> 
+<p>Numero 1: <input type="Text" name="operador1" value="" size="12"> 
+<br>
+<p>Numero 2: <input type="Text" name="operador2" value="" size="12">
+<br>
+<br>
+<input type="Button" name="" value=" Suma + " onclick="calcula('+')">
+<br>
+<p>Resultado: <input type="Text" name="resultado" value="" size="12">
+
+</form>
+</body>
+
+<script>
+  function calcula(operacion){
+    var operador1 = document.calc.operador1.value 
+    var operador2 = document.calc.operador2.value
+    var result = eval(operador1 + operacion + operador2)
+    document.calc.resultado.value = result
+}
+</script>
+</body>
+</html>
